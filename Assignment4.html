@@ -3,33 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <title>Registration form</title>
+    <style>
+      .input_full {
+        width: 98%;
+      }
+    </style>
   </head>
 </html>
 
 <body>
   <form>
-    <table border="1px" , width="90%">
+    <table border="1px" , width="100%">
       <tr>
         <td><b>Fullname*</b></td>
-        <td><input type="text" required /></td>
+        <td><input class="input_full" type="text" required /></td>
       </tr>
 
       <tr>
         <td><b>Email*</b></td>
-        <td><input type="email" required /></td>
+        <td><input class="input_full" type="email" required /></td>
       </tr>
 
       <tr>
         <td><b>Passwork*</b></td>
-        <td><input type="password" required /></td>
+        <td><input class="input_full" type="password" required /></td>
       </tr>
       <tr>
         <td><b>Confirm Passwork*</b></td>
-        <td><input type="password" required /></td>
+        <td><input class="input_full" type="password" required /></td>
       </tr>
       <tr>
         <td><b>Phone Number*</b></td>
-        <td><input type="number" required /></td>
+        <td><input class="input_full" type="number" required /></td>
       </tr>
       <tr>
         <td><b>Address</b></td>
@@ -45,8 +50,16 @@
       </tr>
 
       <tr>
-        <td><b>Zip/Postal Code</b></td>
-        <td><input type = "number" placeholder="Enter your Zip/Postal Code"</td>
+        <td>
+          <b>Zip/Postal Code</b>
+        </td>
+        <td>
+          <input
+            class="input_full"
+            type="text"
+            placeholder="Enter your Zip/Postal Code"
+          />
+        </td>
       </tr>
 
       <tr>
@@ -89,12 +102,18 @@
       <tr>
         <td><b>Comments</b></td>
         <td>
-          <input type="text" placeholder="Please send us more information" />
+          <textarea
+            name=""
+            id=""
+            cols="50"
+            rows="5"
+            placeholder="Please send us more information"
+          ></textarea>
         </td>
       </tr>
       <tr>
         <td colspan="2">
-          <center><input type="Submit"</center>
+          <center><input type="Submit" value="Submit"</center>
         </td>
       </tr>
     </table>
